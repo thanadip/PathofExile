@@ -4,10 +4,10 @@ function Index() {
   return (
     <>
       <div>
-        <div className="text-6xl underline flex flex-column justify-center items-center h-[100vh]">
-          {" "}
-          Path of exile
-        </div>
+        <div
+          className="bg w-[100vw] h-[100vh] "
+          style={{ backgroundImage: "url('src/images/poe2.png')" }}
+        ></div>
       </div>
     </>
   );
