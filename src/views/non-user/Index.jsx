@@ -4,10 +4,12 @@ function Index() {
   return (
     <>
       <div>
-        <div
-          className="bg w-[100vw] h-[100vh] "
-          style={{ backgroundImage: "url('src/images/poe2.png')" }}
-        ></div>
+        <div className="w-[100vw] h-[100vh] flex flex-column justify-center mt-[300px] ">
+          <img
+            src="src\images\Path-of-Exile-Logo.png"
+            className="h-[30vh] animate-floating"
+          />
+        </div>
       </div>
     </>
   );
