@@ -13,7 +13,7 @@ function Index() {
             height: "100vh",
           }}
         >
-          <div className="flex flex-column justify-center items-center h-full">
+          <div className="flex flex-column justify-center items-center h-[80vh]">
             <img
               src="src/images/Path-of-Exile-Logo.png"
               className="h-[30vh] animate-floating z-10 opacity-90"
@@ -23,7 +23,7 @@ function Index() {
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 h-[100dvh] mx-[100px]">
+        <div className="grid grid-cols-4 gap-4 h-[100dvh] mx-[17vw]">
           <div className="flex justify-center h-fit">
             <div className="card w-[300px] bg-base-100 shadow-xl ">
               <figure className="">
