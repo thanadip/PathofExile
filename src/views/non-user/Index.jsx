@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar";
 function Index() {
   return (
     <>
-      <div className="">
+      <div className="bg-black">
         <Navbar />
         <div
           className="bg-cover bg-center relative"
@@ -22,7 +22,72 @@ function Index() {
           </div>
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
         </div>
-        <div className="h-[100dvh] bg-black"></div>
+
+        <div className="grid grid-cols-4 gap-4 h-[100dvh] mx-[100px]">
+          <div className="flex justify-center h-fit">
+            <div className="card w-[300px] bg-base-100 shadow-xl ">
+              <figure className="">
+                <img src="src\images\Abyss_league_logo.png" />
+              </figure>
+              <div className="card-body p-[15px]">
+                <h2 className="card-title text-green-500">End-game</h2>
+                <p>All about end-game contents in the game</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">End-game</div>
+                  <div className="badge badge-outline">Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center h-fit">
+            <div className="card w-[300px] bg-base-100 shadow-xl ">
+              <figure className="">
+                <img src="src\images\Abyss_league_logo.png" />
+              </figure>
+              <div className="card-body p-[15px]">
+                <h2 className="card-title text-green-500">End-game</h2>
+                <p>All about end-game contents in the game</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">End-game</div>
+                  <div className="badge badge-outline">Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center h-fit">
+            <div className="card w-[300px] bg-base-100 shadow-xl ">
+              <figure className="">
+                <img src="src\images\Abyss_league_logo.png" />
+              </figure>
+              <div className="card-body p-[15px]">
+                <h2 className="card-title text-green-500">End-game</h2>
+                <p>All about end-game contents in the game</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">End-game</div>
+                  <div className="badge badge-outline">Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center h-fit">
+            <div className="card w-[300px] bg-base-100 shadow-xl ">
+              <figure className="">
+                <img src="src\images\Abyss_league_logo.png" />
+              </figure>
+              <div className="card-body p-[15px]">
+                <h2 className="card-title text-green-500">End-game</h2>
+                <p>All about end-game contents in the game</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">End-game</div>
+                  <div className="badge badge-outline">Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
