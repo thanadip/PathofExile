@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 function Index() {
   const guides = [
@@ -93,6 +94,7 @@ function Index() {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
