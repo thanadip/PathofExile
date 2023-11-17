@@ -52,15 +52,18 @@ function Index() {
               href="/XD"
               key={index}
             >
-              <div className="card w-[300px] bg-base-100 shadow-xl hover:border border-slate-200">
+              <div className="card w-[300px] h-[350px] bg-base-100 shadow-xl hover:border border-slate-200">
                 <figure className="">
-                  <img src={guide.image} className="h-[175px] object-contain" />
+                  <img
+                    src={guide.image}
+                    className="h-[175px] object-contain w-full"
+                  />
                 </figure>
                 <div className="card-body p-[15px]">
                   <h2 className="card-title text-green-500 hover:underline">
                     {guide.topic}
                   </h2>
-                  <p>{guide.text}</p>
+                  <p className="line-clamp-3">{guide.text}</p>
                   <div className="card-actions justify-end">
                     {guide.badge.map((badge, badgeIndex) => (
                       <div className="badge badge-outline" key={badgeIndex}>
