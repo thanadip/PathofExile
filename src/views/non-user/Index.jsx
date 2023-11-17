@@ -6,7 +6,7 @@ function Index() {
     {
       id: 1,
       topic: "End-game",
-      image: "src/images/Abyss_league_logo.png",
+      image: "src/images/deli1.png",
       text: "All about end-game contents in the game",
       badge: ["End-game", "Content"],
       link: "/end-game",
@@ -14,7 +14,7 @@ function Index() {
     {
       id: 2,
       topic: "Gears",
-      image: "src/images/Abyss_league_logo.png",
+      image: "src/images/gears.png",
       text: "Recommend gears",
       badge: ["Gear", "Beginner", "End-game"],
       link: "/gears",
@@ -22,24 +22,24 @@ function Index() {
     {
       id: 3,
       topic: "Skill gems",
-      image: "src/images/Abyss_league_logo.png",
+      image: "src/images/gems.png",
       text: "Best gem combination",
       badge: ["Skill", "Beginner", "End-game"],
-      link: "/gears",
+      link: "/gems",
     },
     {
       id: 4,
       topic: "Maps",
-      image: "src/images/Abyss_league_logo.png",
+      image: "src/images/maps.png",
       text: "Reccomend grinding map",
       badge: ["Map", "End-game"],
-      link: "/gears",
+      link: "/maps",
     },
   ];
   return (
     <>
       <div className="bg-black">
-        <Navbar />
+        {/* <Navbar /> */}
         {/* Index banner */}
         <div
           className="bg-cover bg-center relative"
@@ -65,14 +65,14 @@ function Index() {
           {guides.map((guide, index) => (
             <a
               className="flex justify-center h-[310px] hover:scale-95 duration-150"
-              href="/XD"
+              href={guide.link}
               key={index}
             >
-              <div className="card w-[300px] h-[350px] bg-base-100 shadow-xl hover:border border-slate-200">
+              <div className="card w-[300px] h-[350px] max-h-[350px] bg-base-100 shadow-xl hover:border border-slate-200">
                 <figure className="">
                   <img
                     src={guide.image}
-                    className="h-[175px] object-contain w-full"
+                    className="h-[175px] object-cover w-full min-h-[175px]"
                   />
                 </figure>
                 <div className="card-body p-[15px]">
