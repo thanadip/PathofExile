@@ -2,6 +2,24 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 
 function Index() {
+  const guides = [
+    {
+      id: 1,
+      topic: "End-game",
+      image: "src/images/Abyss_league_logo.png",
+      text: "All about end-game contents in the game",
+      badge: ["End-game", "Content"],
+      link: "/end-game",
+    },
+    {
+      id: 2,
+      topic: "Gears",
+      image: "src/images/Abyss_league_logo.png",
+      text: "Recommend gears",
+      badge: ["Gears", "Beginner", "End-game"],
+      link: "/gears",
+    },
+  ];
   return (
     <>
       <div className="bg-black">
@@ -26,27 +44,34 @@ function Index() {
 
         {/* Content grid */}
         <div className="text-4xl ml-[17vw] mb-[20px] ">Game content guides</div>
+
         <div className="grid grid-cols-4 gap-4 h-[100dvh] mx-[17vw]">
-          <a
-            className="flex justify-center h-fit hover:scale-95 duration-150"
-            href="/XD"
-          >
-            <div className="card w-[300px] bg-base-100 shadow-xl hover:border border-slate-200">
-              <figure className="">
-                <img src="src\images\Abyss_league_logo.png" />
-              </figure>
-              <div className="card-body p-[15px]">
-                <h2 className="card-title text-green-500 hover:underline">
-                  End-game
-                </h2>
-                <p>All about end-game contents in the game</p>
-                <div className="card-actions justify-end">
-                  <div className="badge badge-outline">End-game</div>
-                  <div className="badge badge-outline">Content</div>
+          {guides.map((guide, index) => (
+            <a
+              className="flex justify-center h-[310px] hover:scale-95 duration-150"
+              href="/XD"
+              key={index}
+            >
+              <div className="card w-[300px] bg-base-100 shadow-xl hover:border border-slate-200">
+                <figure className="">
+                  <img src={guide.image} className="h-[175px] object-contain" />
+                </figure>
+                <div className="card-body p-[15px]">
+                  <h2 className="card-title text-green-500 hover:underline">
+                    {guide.topic}
+                  </h2>
+                  <p>{guide.text}</p>
+                  <div className="card-actions justify-end">
+                    {guide.badge.map((badge, badgeIndex) => (
+                      <div className="badge badge-outline" key={badgeIndex}>
+                        {badge}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          ))}
         </div>
       </div>
     </>
