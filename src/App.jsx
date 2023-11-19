@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //views
 import Index from "./views/non-user/Index";
 import NonPage from "./views/non-user/NonPage";
+import Login from "./views/user/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="*" element={<NonPage />}></Route>
         </Routes>
       </BrowserRouter>

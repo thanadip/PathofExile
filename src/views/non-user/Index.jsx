@@ -36,6 +36,14 @@ function Index() {
       badge: ["Map", "End-game"],
       link: "/maps",
     },
+    {
+      id: 5,
+      topic: "Tools",
+      image: "src/images/Filters.png",
+      text: "Quailty of life tools",
+      badge: ["Tools", "3rd party"],
+      link: "/login",
+    },
   ];
   return (
     <>
@@ -62,7 +70,7 @@ function Index() {
         {/* Content grid */}
         <div className="text-4xl ml-[17vw] mb-[20px] ">Game content guides</div>
 
-        <div className="grid grid-cols-4 gap-4 h-[100dvh] mx-[17vw]">
+        <div className="grid grid-cols-4 gap-4 h-[800px] mx-[17vw]">
           {guides.map((guide, index) => (
             <a
               className="flex justify-center h-[310px] hover:scale-95 duration-150"
