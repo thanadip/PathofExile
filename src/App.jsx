@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./views/non-user/Index";
 import NonPage from "./views/non-user/NonPage";
 import Login from "./views/user/Login";
+import Register from "./views/user/Register";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Index />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Register />}></Route>
           <Route path="*" element={<NonPage />}></Route>
         </Routes>
       </BrowserRouter>
