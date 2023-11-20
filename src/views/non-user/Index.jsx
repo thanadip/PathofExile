@@ -44,6 +44,14 @@ function Index() {
       badge: ["Tools", "3rd party"],
       link: "/login",
     },
+    {
+      id: 6,
+      topic: "Communities",
+      image: "src/images/TFT.png",
+      text: "Path of exile communities",
+      badge: ["Community"],
+      link: "/community",
+    },
   ];
   return (
     <>
