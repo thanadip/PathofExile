@@ -112,10 +112,39 @@ function Index() {
           ))}
 
           {userRole === 1 && (
-            <button className="btn btn-ghost h-[90%]">
+            <button
+              className="btn btn-ghost h-[90%]"
+              onClick={() => document.getElementById("my_modal_1").showModal()}
+            >
               <div className="flex justify-center items-center h-[100%]">
                 <span className="text-green-500 text-3xl">+</span>
               </div>
+              <dialog id="my_modal_1" className="modal">
+                <div className="modal-box">
+                  <h3 className="font-bold text-lg mb-8">Insert Data</h3>
+                  {/* input */}
+
+                  <div className="text-left">Topic</div>
+                  <input
+                    type="text"
+                    className="input input-bordered h-[30px] flex items-start mb-8 mt-4"
+                  />
+                  <div className="text-left">Detail</div>
+                  <input
+                    type="text"
+                    className="input input-bordered h-[30px] mt-2 flex items-start mb-8 mt-4"
+                  />
+                  <div className="text-left">Badge</div>
+                  <input
+                    type="text"
+                    className="input input-bordered h-[30px] mt-2 flex items-start mb-8 mt-4"
+                  />
+
+                  <form method="dialog" className="modal-backdrop">
+                    <button className="btn">Close</button>
+                  </form>
+                </div>
+              </dialog>
             </button>
           )}
         </div>
