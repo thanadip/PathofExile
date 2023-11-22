@@ -148,6 +148,20 @@ function Index() {
             </button>
           )}
         </div>
+
+        <div className="text-5xl text-center mt-[200px]">
+          New PoE's patch is here!
+          <div className="h-[1000px] w-[100%] flex justify-center items-start mt-[100px]">
+            <iframe
+              src="https://www.youtube.com/embed/AZeCLKBddXQ?si=j2pTRXRCONjtWIBv"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              className="h-[50vh] w-[50vw]"
+            ></iframe>
+          </div>
+        </div>
       </div>
       <Footer></Footer>
     </>
