@@ -53,6 +53,8 @@ function Index() {
       link: "/community",
     },
   ];
+
+  const userRole = 1;
   return (
     <>
       <div className="bg-black">
@@ -108,6 +110,14 @@ function Index() {
               </div>
             </a>
           ))}
+
+          {userRole === 1 && (
+            <button className="btn btn-ghost h-[90%]">
+              <div className="flex justify-center items-center h-[100%]">
+                <span className="text-green-500 text-3xl">+</span>
+              </div>
+            </button>
+          )}
         </div>
       </div>
       <Footer></Footer>
