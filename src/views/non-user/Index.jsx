@@ -78,7 +78,9 @@ function Index() {
         </div>
 
         {/* Content grid */}
-        <div className="text-4xl ml-[17vw] mb-[20px] ">Game content guides</div>
+        <div className="text-4xl ml-[17vw] mb-[20px] ">
+          Game content guides [Patch 3.22]{" "}
+        </div>
 
         <div className="grid grid-cols-4 gap-4 h-[800px] mx-[17vw]">
           {guides.map((guide, index) => (
